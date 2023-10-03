@@ -1,0 +1,18 @@
+# Copyright (c) 2023 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+if BOARD_BOARDSOURCE_EQUALS
+
+config BOARD
+	default "boardsource_equals"
+
+config ZMK_KEYBOARD_NAME
+	default "Boardsource Equals"
+
+config RP2_FLASH_W25Q080
+    default y
+
+config ZMK_USB
+    default y
+
+endif # BOARD_BOARDSOURCE_EQUALS

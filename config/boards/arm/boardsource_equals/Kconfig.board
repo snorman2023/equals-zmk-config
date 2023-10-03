@@ -1,0 +1,9 @@
+# Boardsource Equals board configuration
+
+# Copyright (c) 2023 Pete Johanson
+# SPDX-License-Identifier: MIT
+
+config BOARD_BOARDSOURCE_EQUALS
+	bool "Boardsource Equals"
+    	depends on SOC_RP2040
+
