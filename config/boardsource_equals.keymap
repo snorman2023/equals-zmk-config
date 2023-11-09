@@ -20,7 +20,7 @@
 #define SYM_L 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+// &lt { quick_tap_ms = <200>; };
 
 / {
     chosen {
@@ -44,15 +44,15 @@
 #endif
     };
 
-    tap_dances {
-    	shifty: shift_caps_word {
-		compatible = "zmk,behavior-tap-dance";
-		label = "TD_SHIFTY";
-		#binding-cells = <0>;
-		tapping-term-ms = <150>;
-		bindings = <&kp LSHFT>, <&caps_word>;
-	};
-    };
+//    tap_dances {
+//    	shifty: shift_caps_word {
+//		compatible = "zmk,behavior-tap-dance";
+//		label = "TD_SHIFTY";
+//		#binding-cells = <0>;
+//		tapping-term-ms = <150>;
+//		bindings = <&kp LSHFT>, <&caps_word>;
+//	};
+//    };
 
     keymap {
         compatible = "zmk,keymap";
