@@ -6,43 +6,18 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-// #include <dt-bindings/zmk/outputs.h>
-
-#define QWERTY_BASE 1
-
-// #define EQUALS60 1
-
-#define BOTTOM_ORTHO   1
-// #define BOTTOM_MIT     1
-
-#define NAV_L 1
-#define NUM_L 2
-#define SYM_L 3
+#include <dt-bindings/zmk/outputs.h>
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 // &lt { quick_tap_ms = <200>; };
 
 / {
     chosen {
-       zmk,matrix_transform =
-#if defined(EQUALS60)
+       zmk,matrix_transform = &ortho48_transform;
 
-#if defined(BOTTOM_MIT)
-                       &mit60_transform;
-#else
-                       &ortho60_transform;
-#endif
-
-#else // !defined(EQUALS60)
-
-#if defined(BOTTOM_MIT)
-                       &mit48_transform;
-#else
-                       &ortho48_transform;
-#endif
-
-#endif
     };
+
+};
 
 //    tap_dances {
 //    	shifty: shift_caps_word {
