@@ -5,9 +5,9 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/led/led.h>
 
 / {
     chosen {
@@ -24,15 +24,19 @@
 &kp LSHFT  &kp Z     &kp X     &kp C     &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RET
 &mo 1      &kp LALT  &kp LGUI  &kp BSPC  &kp ENTER  &kp SPACE  &kp BSPC  &kp ENTER  &kp BSPC   &kp RGUI  &kp RALT  &bootloader
             >;
+
+            label = "base";
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_TOG
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bootloader
+&bootloader  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &rgb_ug RGB_TOG
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &bl BL_TOG
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&trans       &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
             >;
+
+            label = "raise";
         };
     };
 };
