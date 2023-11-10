@@ -22,6 +22,8 @@
 &kp LSHFT  &kp Z     &kp X     &kp C     &kp V      &kp B      &kp N     &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RET
 &mo 1      &kp LALT  &kp LGUI  &kp BSPC  &kp ENTER  &kp SPACE  &kp BSPC  &kp ENTER  &kp BSPC   &kp RGUI  &kp RALT  &bootloader
             >;
+
+            label = "base";
         };
 
         layer_1 {
@@ -29,8 +31,10 @@
 &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
 &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
 &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
+&trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
             >;
+
+            label = "raise";
         };
     };
 };
