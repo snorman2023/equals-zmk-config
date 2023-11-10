@@ -5,7 +5,9 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 
 / {
     chosen {
@@ -28,10 +30,10 @@
 
         layer_1 {
             bindings = <
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&trans  &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
+&bootloader  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &rgb_ug RGB_TOG
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &bl BL_TOG
+&kp N1       &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&trans       &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
             >;
 
             label = "raise";
