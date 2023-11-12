@@ -75,10 +75,10 @@
 
         layer_1 {
             bindings = <
-&kp N1              &kp N1            &kp N1            &kp DOWN  &kp UP     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&hrm LEFT_ALT BSLH  &hrm LCTRL SLASH  &hrm LSHIFT SEMI  &kp LEFT  &kp RIGHT  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&kp N1              &kp N1            &kp N1            &kp N1    &kp N1     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&kp N1              &kp T             &kp T             &kp T     &kp T      &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
+&hrm LEFT_ALT BACKSLASH   &hrm LCTRL LEFT_BRACKET  &hrm LSHFT RIGHT_BRACKET  &kp DOWN  &kp UP     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&hrm LEFT_ALT APOSTROPHE  &hrm LCTRL L             &hrm LSHIFT SEMI          &kp LEFT  &kp RIGHT  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&kp SLASH                 &kp Z                    &kp X                     &kp C     &kp V      &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
+&kp N1                    &kp T                    &kp T                     &kp T     &kp T      &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
             >;
 
             label = "raise";
