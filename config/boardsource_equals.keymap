@@ -23,17 +23,17 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <225>;
+            tapping-term-ms = <200>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47>;
         };
-        hsticky: hsticky {
+        hshft: hshft {
             compatible = "zmk,behavior-hold-tap";
-            label = "HSTICKY";
-            bindings = <&sk>, <&kp>;
+            label = "HSHFT";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <140>;
+            tapping-term-ms = <135>;
             flavor = "tap-preferred";
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47>;
         };
@@ -74,10 +74,10 @@
 
         layer_0 {
             bindings = <
-&hmolyr 4 GRAVE   &hrm LSHIFT Q      &hrm LALT W      &hrm LCTRL E         &hrm LSHFT R       &kp T            &kp Y                &kp U              &kp I         &kp O        &kp P           &kp BSPC
-&hmolyr 5 TAB     &hrm LSHFT A       &hrm LEFT_ALT S  &hrm LCTRL D         &hsticky LSHIFT F  &kp G            &kp H                &hsticky LSHIFT J  &hrm RCTRL K  &hrm RALT L  &hrm RWIN SEMI  &kp SQT
-&hmolyr 6 ESCAPE  &hrm LA(LSHIFT) Z  &hrm LALT X      &hrm LCTRL C         &hrm LSHIFT V      &kp B            &kp N                &kp M              &kp COMMA     &kp DOT      &kp FSLH        &kp RET
-&mo 7             &kp LALT           &hmolyr 9 DEL    &hmolyr 3 BACKSPACE  &hmolyr 2 ENTER    &hmolyr 1 SPACE  &hmolyr 8 BACKSPACE  &kp ENTER          &kp BSPC      &kp RGUI     &kp RALT        &bootloader
+&hmolyr 4 GRAVE   &hrm LSHIFT Q      &hrm LALT W      &hrm LCTRL E         &hrm LSHFT R     &kp T            &kp Y                &kp U            &kp I         &kp O        &kp P           &kp BSPC
+&hmolyr 5 TAB     &hrm LSHFT A       &hrm LEFT_ALT S  &hrm LCTRL D         &hshft LSHIFT F  &kp G            &kp H                &hshft LSHIFT J  &hrm RCTRL K  &hrm RALT L  &hrm RWIN SEMI  &kp SQT
+&hmolyr 6 ESCAPE  &hrm LA(LSHIFT) Z  &hrm LALT X      &hrm LCTRL C         &hrm LSHIFT V    &kp B            &kp N                &kp M            &kp COMMA     &kp DOT      &kp FSLH        &kp RET
+&mo 7             &kp LALT           &hmolyr 9 DEL    &hmolyr 3 BACKSPACE  &hmolyr 2 ENTER  &hmolyr 1 SPACE  &hmolyr 8 BACKSPACE  &kp ENTER        &kp BSPC      &kp RGUI     &kp RALT        &bootloader
             >;
 
             label = "base";
