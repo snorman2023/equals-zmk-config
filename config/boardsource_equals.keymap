@@ -77,10 +77,10 @@
 
         layer_0 {
             bindings = <
-&hmolyr 4 GRAVE   &hrm LSHIFT Q      &hrm LALT W      &hrm LCTRL E         &hrm LSHFT R     &kp T            &kp Y                &kp U            &kp I         &kp O        &kp P           &kp BSPC
-&hmolyr 5 TAB     &hrm LSHFT A       &hrm LEFT_ALT S  &hrm LCTRL D         &hshft LSHIFT F  &kp G            &kp H                &hshft LSHIFT J  &hrm RCTRL K  &hrm RALT L  &hrm RWIN SEMI  &kp SQT
-&hmolyr 6 ESCAPE  &hrm LA(LSHIFT) Z  &hrm LALT X      &hrm LCTRL C         &hrm LSHIFT V    &kp B            &kp N                &kp M            &kp COMMA     &kp DOT      &kp FSLH        &kp RET
-&mo 7             &kp LALT           &hmolyr 9 DEL    &hmolyr 3 BACKSPACE  &hmolyr 2 ENTER  &hmolyr 1 SPACE  &hmolyr 8 BACKSPACE  &kp ENTER        &kp BSPC      &kp RGUI     &kp RALT        &bootloader
+&hmolyr 4 GRAVE   &hrm LSHIFT Q  &hrm LALT W      &hrm LCTRL E         &hrm LSHFT R     &kp T            &kp Y                &kp U            &kp I         &kp O        &kp P           &kp BSPC
+&hmolyr 5 TAB     &hrm LSHFT A   &hrm LEFT_ALT S  &hrm LCTRL D         &hshft LSHIFT F  &kp G            &kp H                &hshft LSHIFT J  &hrm RCTRL K  &hrm RALT L  &hrm RWIN SEMI  &kp SQT
+&hmolyr 6 ESCAPE  &hrm LSHIFT Z  &hrm LALT X      &hrm LCTRL C         &hrm LSHIFT V    &kp B            &kp N                &kp M            &kp COMMA     &kp DOT      &kp FSLH        &kp RET
+&mo 7             &kp LALT       &hmolyr 9 DEL    &hmolyr 3 BACKSPACE  &hmolyr 2 ENTER  &hmolyr 1 SPACE  &hmolyr 8 BACKSPACE  &kp ENTER        &kp BSPC      &kp RGUI     &kp RALT        &bootloader
             >;
 
             label = "base";
