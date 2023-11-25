@@ -88,10 +88,10 @@
 
         layer_1 {
             bindings = <
-&hrm LEFT_ALT BACKSLASH   &hrm LCTRL L      &hrm LSHFT SEMI   &kp DOWN                 &kp UP                    &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&hrm LEFT_ALT APOSTROPHE  &hrm LCTRL MINUS  &hrm LSHIFT PLUS  &hrm LS(LA(LCTRL)) LEFT  &hrm LS(LA(LCTRL)) RIGHT  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&kp SLASH                 &kp Z             &kp X             &kp C                    &kp V                     &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1  &kp N1
-&kp N1                    &kp T             &kp T             &kp T                    &kp T                     &kp T   &kp T   &kp T   &kp T   &kp T   &kp T   &kp T
+&hrm LEFT_ALT BACKSLASH   &hrm LCTRL L      &hrm LSHFT SEMI   &kp DOWN                 &kp UP                    &kp N1  &kp N1  &kp N1        &kp N1  &kp N1  &kp N1  &kp N1
+&hrm LEFT_ALT APOSTROPHE  &hrm LCTRL MINUS  &hrm LSHIFT PLUS  &hrm LS(LA(LCTRL)) LEFT  &hrm LS(LA(LCTRL)) RIGHT  &kp N1  &kp N1  &hrm RSHFT J  &kp N1  &kp N1  &kp N1  &kp N1
+&kp SLASH                 &kp Z             &kp X             &kp C                    &kp V                     &kp N1  &kp N1  &kp N1        &kp N1  &kp N1  &kp N1  &kp N1
+&kp N1                    &kp T             &kp T             &kp T                    &kp T                     &kp T   &kp T   &kp T         &kp T   &kp T   &kp T   &kp T
             >;
 
             label = "raise";
