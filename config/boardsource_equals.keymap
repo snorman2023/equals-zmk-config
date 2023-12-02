@@ -60,6 +60,15 @@
             flavor = "tap-unless-interrupted";
             hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47>;
         };
+
+        com_per: com_per {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COM_PER";
+            bindings = <&kp COMMA>, <&kp PERIOD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -68,7 +77,6 @@
         aaaa {
             bindings = <&kp Z>;
             key-positions = <13 14 15 16>;
-            layers = <1>;
         };
     };
 
@@ -77,104 +85,28 @@
 
         layer_0 {
             bindings = <
-&hmolyr 4 GRAVE   &hrm LSHIFT Q  &hrm LALT W      &hrm LCTRL E         &hrm LSHFT R     &kp T            &kp Y                &kp U            &kp I           &kp O        &kp P           &kp BSPC
-&hmolyr 5 TAB     &hrm LSHFT A   &hrm LEFT_ALT S  &hrm LCTRL D         &hshft LSHIFT F  &kp G            &kp H                &hshft LSHIFT J  &hrm RCTRL K    &hrm RALT L  &hrm RWIN SEMI  &kp SQT
-&hmolyr 6 ESCAPE  &hrm LSHIFT Z  &hrm LALT X      &hrm LCTRL C         &hrm LSHIFT V    &kp B            &kp N                &kp M            &kp COMMA       &kp DOT      &kp FSLH        &kp RET
-&mo 7             &kp LALT       &hmolyr 9 DEL    &hmolyr 3 BACKSPACE  &hmolyr 2 ENTER  &hmolyr 1 SPACE  &hmolyr 8 BACKSPACE  &hmolyr 9 ENTER  &hmolyr 10 DEL  &kp RGUI     &kp RALT        &bootloader
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp L   &kp G   &kp D   &trans  &trans  &trans  &trans  &kp H   &kp U   &kp O   &trans
+&kp I   &kp S   &kp R   &kp T   &trans  &trans  &trans  &trans  &kp N   &kp E   &kp A   &kp C
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
-
-            label = "base";
         };
 
         layer_1 {
             bindings = <
-&hrm LEFT_ALT BACKSLASH   &hrm LCTRL L      &hrm LSHFT SEMI   &kp DOWN                 &kp UP                    &kp N1  &kp N1  &kp N1        &kp N1  &kp N1  &kp N1  &kp N1
-&hrm LEFT_ALT APOSTROPHE  &hrm LCTRL MINUS  &hrm LSHIFT PLUS  &hrm LS(LA(LCTRL)) LEFT  &hrm LS(LA(LCTRL)) RIGHT  &kp N1  &kp N1  &hrm RSHFT J  &kp N1  &kp N1  &kp N1  &kp N1
-&kp SLASH                 &kp Z             &kp X             &kp C                    &kp V                     &kp N1  &kp N1  &kp N1        &kp N1  &kp N1  &kp N1  &kp N1
-&kp N1                    &kp T             &kp T             &kp T                    &kp T                     &kp T   &kp T   &kp T         &kp T   &kp T   &kp T   &kp T
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &kp V   &kp W   &kp M   &trans  &trans  &trans  &trans  &kp F   &kp SQT  &kp Z   &none
+&kp Q   &kp J   &kp P   &kp K   &trans  &trans  &trans  &trans  &kp B   &trans   &kp X   &kp Y
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans  &trans
             >;
-
-            label = "raise";
         };
 
         layer_2 {
             bindings = <
-&kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2
-&kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2
-&kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2
-&kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2  &kp N2
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3
-&kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3
-&kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3
-&kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3  &kp N3
-            >;
-        };
-
-        layer_4 {
-            bindings = <
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
-            >;
-        };
-
-        layer_5 {
-            bindings = <
-&kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5
-&kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5
-&kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5
-&kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5  &kp N5
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6
-&kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6
-&kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6
-&kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6  &kp N6
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7
-&kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7
-&kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7
-&kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7  &kp N7
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&kp PIPE     &kp BACKSLASH  &kp N7  &kp N8         &kp N9     &kp EQUAL  &kp N8         &kp LESS_THAN                 &kp GREATER_THAN              &kp LEFT_BRACE          &kp RIGHT_BRACE          &kp N8
-&kp MINUS    &kp PLUS       &kp N4  &kp N5         &kp N6     &kp N0     &kp INS        &hrm LSHIFT LEFT_PARENTHESIS  &hrm LCTRL RIGHT_PARENTHESIS  &hrm LALT LEFT_BRACKET  &hrm LGUI RIGHT_BRACKET  &kp N8
-&kp PERCENT  &kp ASTERISK   &kp N1  &kp N2         &kp N3     &kp DOT    &kp HOME       &kp PG_UP                     &kp PAGE_DOWN                 &kp END                 &kp EXCLAMATION          &kp N8
-&kp N8       &kp N8         &kp N8  &kp BACKSPACE  &kp ENTER  &kp SPACE  &kp BACKSPACE  &kp N8                        &kp N8                        &kp N8                  &kp N8                   &kp N8
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&kp N9  &kp F9  &kp F10  &kp F11  &kp F12  &kp N9  &kp N9   &kp N9  &kp N9  &kp N9  &kp N9  &kp N9
-&kp N9  &kp F5  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10  &kp N9  &kp N9  &kp N9  &kp N9  &kp N9
-&kp N9  &kp F1  &kp F2   &kp F3   &kp F4   &kp N9  &kp N9   &kp N9  &kp N9  &kp N9  &kp N9  &kp N9
-&kp N9  &kp N9  &kp N9   &kp N9   &kp N9   &kp N9  &kp N9   &kp N9  &kp N9  &kp N9  &kp N9  &kp N9
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH
-&kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH
-&kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH
-&kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH  &kp FSLH
+&trans     &trans      &trans       &trans     &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans
+&trans     &kp EXCL    &kp AT_SIGN  &kp POUND  &trans  &trans  &trans  &trans  &kp AMPERSAND   &kp ASTERISK  &kp QUESTION  &none
+&kp GRAVE  &kp DOLLAR  &kp PERCENT  &kp CARET  &trans  &trans  &trans  &trans  &kp UNDERSCORE  &kp BSLH      &kp PIPE      &kp TILDE
+&trans     &trans      &trans       &trans     &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans
             >;
         };
     };
