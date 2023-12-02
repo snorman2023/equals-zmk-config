@@ -74,9 +74,28 @@
     combos {
         compatible = "zmk,combos";
 
-        aaaa {
-            bindings = <&kp Z>;
-            key-positions = <13 14 15 16>;
+        bspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <34 33>;
+            layers = <0>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <34 33>;
+            layers = <0>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <25 26>;
+            layers = <0>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <37 38>;
+            layers = <0>;
         };
     };
 
@@ -85,7 +104,7 @@
 
         layer_0 {
             bindings = <
-&trans  &trans        &trans           &trans     &trans                    &trans  &trans  &trans  &trans       &trans            &trans        &trans
+&trans  &trans        &trans           &trans     &trans                    &trans  &trans  &trans  &trans       &trans            &trans        &bootloader
 &trans  &hrm LCTRL L  &hrm LEFT_ALT G  &kp D      &trans                    &trans  &trans  &trans  &kp H        &hrm RIGHT_ALT U  &hrm RCTRL O  &trans
 &kp I   &kp S         &hmolyr 2 R      &kp T      &trans                    &trans  &trans  &trans  &kp N        &hmolyr 2 E       &kp A         &kp C
 &trans  &trans        &trans           &sk LSHFT  &hrm LS(LA(LCTRL)) SPACE  &trans  &trans  &sl 1   &key_repeat  &trans            &trans        &trans
