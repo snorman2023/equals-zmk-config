@@ -76,7 +76,7 @@
 
         bspc {
             bindings = <&kp BACKSPACE>;
-            key-positions = <34 33>;
+            key-positions = <21 22>;
             layers = <0>;
         };
 
@@ -88,13 +88,13 @@
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <25 26>;
+            key-positions = <13 14>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <37 38>;
+            key-positions = <25 26>;
             layers = <0>;
         };
     };
