@@ -89,28 +89,28 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <21 22>;
             layers = <0>;
-            timeout-ms = <10>;
+            timeout-ms = <30>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <34 33>;
             layers = <0>;
-            timeout-ms = <10>;
+            timeout-ms = <30>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
             layers = <0>;
-            timeout-ms = <10>;
+            timeout-ms = <30>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <25 26>;
             layers = <0>;
-            timeout-ms = <10>;
+            timeout-ms = <30>;
         };
     };
 
