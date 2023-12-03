@@ -117,10 +117,10 @@
 
         layer_4 {
             bindings = <
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
-&kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
+&kp N4  &kp INTERNATIONAL_4  &kp INT_MUHENKAN  &kp INT6  &kp INTERNATIONAL_7  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
+&kp N4  &kp N4               &kp N4            &kp N4    &kp N4               &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
+&kp N4  &kp N4               &kp N4            &kp N4    &kp N4               &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
+&kp N4  &kp N4               &kp N4            &kp N4    &kp N4               &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4  &kp N4
             >;
         };
 
