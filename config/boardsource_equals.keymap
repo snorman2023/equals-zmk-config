@@ -87,43 +87,37 @@
 
         bspc {
             bindings = <&kp BACKSPACE>;
-            key-positions = <21 22>;
-            layers = <0>;
+            key-positions = <22 21>;
             timeout-ms = <30>;
         };
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <34 33>;
-            layers = <0>;
+            key-positions = <44 45 38 39>;
             timeout-ms = <30>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
-            layers = <0>;
+            key-positions = <12 13>;
             timeout-ms = <30>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <25 26>;
-            layers = <0>;
+            key-positions = <24 25>;
             timeout-ms = <30>;
         };
 
         lshift {
             bindings = <&sk LEFT_SHIFT>;
-            key-positions = <27 26>;
-            layers = <0>;
+            key-positions = <27 28>;
             timeout-ms = <30>;
         };
 
         rshift {
             bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <32 33>;
-            layers = <0>;
+            key-positions = <31 32>;
             timeout-ms = <30>;
         };
     };
@@ -133,28 +127,10 @@
 
         layer_0 {
             bindings = <
-&trans  &trans        &trans           &trans     &trans                    &trans  &trans  &trans  &trans       &trans            &trans        &bootloader
-&trans  &hrm LCTRL L  &hrm LEFT_ALT G  &kp D      &trans                    &trans  &trans  &trans  &kp H        &hrm RIGHT_ALT U  &hrm RCTRL O  &trans
-&kp I   &kp S         &hmolyr 2 R      &kp T      &trans                    &trans  &trans  &trans  &kp N        &hmolyr 2 E       &kp A         &kp C
-&trans  &trans        &trans           &sk LSHFT  &hrm LS(LA(LCTRL)) SPACE  &trans  &trans  &sl 1   &key_repeat  &trans            &trans        &trans
-            >;
-        };
-
-        layer_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans
-&trans  &kp V   &kp W   &kp M   &trans  &trans  &trans  &trans  &kp F   &kp SQT   &kp Z   &none
-&kp Q   &kp J   &kp P   &kp K   &trans  &trans  &trans  &trans  &kp B   &com_per  &kp X   &kp Y
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none   &trans    &trans  &trans
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&trans     &trans      &trans       &trans     &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans
-&trans     &kp EXCL    &kp AT_SIGN  &kp POUND  &trans  &trans  &trans  &trans  &kp AMPERSAND   &kp ASTERISK  &kp QUESTION  &none
-&kp GRAVE  &kp DOLLAR  &kp PERCENT  &kp CARET  &trans  &trans  &trans  &trans  &kp UNDERSCORE  &kp BSLH      &kp PIPE      &kp TILDE
-&trans     &trans      &trans       &trans     &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans     &bootloader  &trans  &trans  &trans  &trans  &trans     &trans
+&kp Y   &kp C   &kp L   &kp M   &kp K      &trans       &trans  &kp Z   &kp F   &kp U   &kp COMMA  &kp SQT
+&kp I   &kp S   &kp R   &kp T   &kp G      &trans       &trans  &kp P   &kp N   &kp E   &kp A      &kp O
+&kp Q   &kp V   &kp W   &kp D   &kp SPACE  &trans       &trans  &kp B   &kp H   &kp J   &kp DOT    &kp X
             >;
         };
     };
