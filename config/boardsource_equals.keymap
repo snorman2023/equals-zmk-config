@@ -7,14 +7,10 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&sk {
-    quick-release;
-};
+&sk { quick-release; };
 
 / {
-    chosen {
-        zmk,matrix_transform = &ortho48_transform;
-    };
+    chosen { zmk,matrix_transform = &ortho48_transform; };
 
     behaviors {
         hrm: hrm {
@@ -155,6 +151,15 @@
 &trans     &kp EXCL    &kp AT_SIGN  &kp POUND  &trans  &trans  &trans  &trans  &kp AMPERSAND   &kp ASTERISK  &kp QUESTION  &none
 &kp GRAVE  &kp DOLLAR  &kp PERCENT  &kp CARET  &trans  &trans  &trans  &trans  &kp UNDERSCORE  &kp BSLH      &kp PIPE      &kp TILDE
 &trans     &trans      &trans       &trans     &trans  &trans  &trans  &trans  &trans          &trans        &trans        &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
